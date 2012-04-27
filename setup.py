@@ -4,8 +4,8 @@ from setuptools import setup
 
 setup(
     name='santa.theme',
-    version='0.0',
-    description="ABITA Theme",
+    version='0.1',
+    description="Santa Claus Foundation Theme",
     long_description=open("README.rst").read(),
     # Get more strings from
     # http://pypi.python.org/pypi?:action=list_classifiers
@@ -27,10 +27,8 @@ setup(
     install_requires=[
         'hexagonit.testing',
         'plone.app.theming',
-        'plone.browserlayer',
         'setuptools',
         'plone.app.themingplugins',
-        'zope.i18nmessageid',
     ],
     entry_points="""
     # -*- Entry points: -*-
