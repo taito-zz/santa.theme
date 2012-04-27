@@ -1,0 +1,7 @@
+#portal-column-content {
+  background: white;
+  opacity: 0.7;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+}

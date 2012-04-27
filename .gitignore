@@ -1,0 +1,8 @@
+santa/theme/theme_resources/less/plone/*.css
+santa/theme/theme_resources/less/theme/*.css
+*.egg-info
+*.pyc
+*.pyo
+*~
+.DS_Store
+dist

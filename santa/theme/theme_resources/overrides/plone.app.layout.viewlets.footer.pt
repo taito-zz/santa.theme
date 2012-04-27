@@ -1,0 +1,25 @@
+<div
+  metal:define-macro="portal_footer"
+  i18n:domain="plone"
+  class="row"
+  >
+  <div class="cell width-full position-0">
+    <div id="portal-footer">
+      &copy;2000-<tal:year tal:content="view/year" /> 
+      <a
+        href="http://santaclausfoundation.fi"
+        title="Santa Claus Foundation"
+        >
+        Santa Claus Foundation
+      </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      Site develped by 
+      <a
+        href="http://abita.fi/"
+        target="_blank"
+        title="ABITA Open Source Technologies &amp;&amp; Open Busunesses"
+        >
+          ABITA OY
+      </a>
+    </div>
+  </div>
+</div>
