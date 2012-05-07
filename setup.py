@@ -27,8 +27,8 @@ setup(
     install_requires=[
         'hexagonit.testing',
         'plone.app.theming',
-        'setuptools',
         'plone.app.themingplugins',
+        'setuptools',
     ],
     entry_points="""
     # -*- Entry points: -*-
