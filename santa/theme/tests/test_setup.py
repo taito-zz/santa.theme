@@ -7,18 +7,23 @@ class TestCase(IntegrationTestCase):
 
     def setUp(self):
         self.portal = self.layer['portal']
-        self.installer = getToolByName(self.portal, 'portal_quickinstaller')
 
     def test_is_santa_theme_installed(self):
-        self.failUnless(self.installer.isProductInstalled('santa.theme'))
+        installer = getToolByName(self.portal, 'portal_quickinstaller')
+        self.failUnless(installer.isProductInstalled('santa.theme'))
 
     def test_is_plone_app_theming_installed(self):
-        self.failUnless(self.installer.isProductInstalled('plone.app.theming'))
+        installer = getToolByName(self.portal, 'portal_quickinstaller')
+        self.failUnless(installer.isProductInstalled('plone.app.theming'))
+
+    def test_is_santa_templates_installed(self):
+        installer = getToolByName(self.portal, 'portal_quickinstaller')
+        self.failUnless(installer.isProductInstalled('santa.templates'))
 
     def test_uninstall(self):
-        self.installer.uninstallProducts(['santa.theme'])
-        self.failIf(self.installer.isProductInstalled('santa.theme'))
-
+        installer = getToolByName(self.portal, 'portal_quickinstaller')
+        installer.uninstallProducts(['santa.theme'])
+        self.failIf(installer.isProductInstalled('santa.theme'))
 
     def test_css_registry_configured(self):
         css_resources = set(
