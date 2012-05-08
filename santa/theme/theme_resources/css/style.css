@@ -635,7 +635,8 @@ dden elements don't take up space */
 /* @group Navigation/search */
 #portal-logo {
   display: inline-block;
-  margin: 0.5em 1em;
+  float: left;
+  margin: 0.5em 2em;
 }
 #portal-header {
   position: relative;

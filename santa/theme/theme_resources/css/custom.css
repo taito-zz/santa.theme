@@ -1,3 +1,11 @@
+#head-title h1 {
+    margin-bottom: 0;
+}
+#head-title h2 {
+    font-size: 1.4em;
+    margin: 0;
+}
+
 #portal-column-content {
   background: white;
   opacity: 0.7;
