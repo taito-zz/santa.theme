@@ -5,11 +5,38 @@
     font-size: 1.4em;
     margin: 0;
 }
-
 #portal-column-content {
   background: white;
   opacity: 0.7;
   border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
+}
+section.santa-feed h1 {
+  border-bottom: 0.1em solid DarkRed;
+  margin-bottom: ;
+}
+section.santa-feed article h1 {
+  font-size: 1.3em;
+  border-bottom: 0.1em;
+}
+section.santa-feed article h2 {
+  color: gray;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0.1em 0;
+}
+section.santa-feed article p {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0.1em 0;
+}
+section.santa-feed article img {
+  float: left;
+  margin-right: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+}
+section.santa-feed article img.santa-fall-back {
+  width: 200px;
 }
