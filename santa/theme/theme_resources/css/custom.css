@@ -12,6 +12,12 @@
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
 }
+#santa-top {
+  -moz-column-count: 2;
+}
+section.santa-feed{
+  clear: both;
+}
 section.santa-feed h1 {
   border-bottom: 0.1em solid DarkRed;
   margin-bottom: ;
