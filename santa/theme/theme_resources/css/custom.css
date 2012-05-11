@@ -7,7 +7,7 @@
 }
 #portal-column-content {
   background: white;
-  opacity: 0.7;
+  opacity: 0.85;
   border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
@@ -20,7 +20,10 @@ section.santa-feed{
 }
 section.santa-feed h1 {
   border-bottom: 0.1em solid DarkRed;
-  margin-bottom: ;
+}
+section.santa-feed article {
+  clear: both;
+  margin-bottom: 0.5em;
 }
 section.santa-feed article h1 {
   font-size: 1.3em;
@@ -39,7 +42,7 @@ section.santa-feed article p {
 }
 section.santa-feed article img {
   float: left;
-  margin-right: 0.5em;
+  margin: 0 0.5em 0.5em;
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
 }
