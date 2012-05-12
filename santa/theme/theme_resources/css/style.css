@@ -1005,6 +1005,10 @@ a.managePortletsFallback {
   border: none;
   line-height: 2em;
 }
+#visual-portal-wrapper {
+  width: 1000px;
+  margin: auto;
+}
 #visual-portal-wrapper dl.portletCalendar dd {
   padding: 0;
 }
@@ -2478,7 +2482,7 @@ dl.toc dd ol {
   color: #333333;
   padding: 1em;
   opacity: 0.7;
-  margin: 1em 0.75em 1em;
+  margin: 1em 0;
   line-height: 1em;
   text-align: right;
 }
