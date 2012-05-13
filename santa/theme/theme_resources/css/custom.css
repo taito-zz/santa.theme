@@ -14,6 +14,20 @@
 }
 #santa-top {
   -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+}
+section#santa-about ul {
+  text-align: right;
+}
+section#santa-about ul li {
+  background: DarkSalmon;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  display: inline;
+  margin-right: 1em;
+  padding: 0.5em;
 }
 section.santa-feed{
   clear: both;
@@ -48,4 +62,16 @@ section.santa-feed article img {
 }
 section.santa-feed article img.santa-fall-back {
   width: 200px;
+}
+p.read-more {
+  text-align: right;
+}
+p.read-more a{
+  background: DarkSalmon;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  display: inline;
+  margin-right: 1em;
+  padding: 0.5em;
 }

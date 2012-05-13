@@ -576,7 +576,7 @@ a:visited {
   color: DarkRed !important;
 }
 a:hover {
-  color: DarkRed !important;
+  color: Black !important;
 }
 dt {
   font-weight: bold;
@@ -652,7 +652,7 @@ dden elements don't take up space */
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
   margin: 0 0 1em 0;
-  opacity: 0.7;
+  opacity: 0.85;
   padding: 0 1em;
   clear: both;
 }
@@ -892,7 +892,7 @@ dl.portlet {
   -moz-border-radius: 0.5em;
   margin: 0 0 1em;
   font-size: 13px;
-  opacity: 0.7;
+  opacity: 0.85;
 }
 dl.portlet dt {
   color: DarkRed;
@@ -990,7 +990,7 @@ a.managePortletsFallback {
   border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
-  opacity: 0.7;
+  /*opacity: 0.7;*/
 }
 a.managePortletsFallback {
   display: inline-block;
@@ -1181,7 +1181,7 @@ dl.portletNavigationTree dd.portletItem {
   /*border-bottom: 0.1em solid #cccccc;*/
 }
 #content a:hover {
-  color: DarkRed !important;
+  color: Black !important;
   /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
 
 }
@@ -2481,7 +2481,7 @@ dl.toc dd ol {
   -moz-border-radius: 0.5em;
   color: #333333;
   padding: 1em;
-  opacity: 0.7;
+  opacity: 0.85;
   margin: 1em 0;
   line-height: 1em;
   text-align: right;
