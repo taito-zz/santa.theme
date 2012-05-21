@@ -4,14 +4,21 @@
   class="row"
   >
   <div class="cell width-full position-0">
-    <div id="portal-footer">
+    <div
+      id="portal-footer"
+      tal:define="portal_state view/portal_state"
+      >
       &copy;2000-<tal:year tal:content="view/year" /> 
       <a
         href="http://santaclausworld.fi"
-        title="Santa Claus Foundation"
-        >
-        Santa Claus Foundation
-      </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        tal:attributes="
+          alt portal_state/portal_title;
+          href view/site_url;
+          title portal_state/portal_title;
+        "
+        tal:content="portal_state/portal_title"
+        />
+        &nbsp;&nbsp;|&nbsp;&nbsp;
       Site develped by 
       <a
         href="http://abita.fi/"
