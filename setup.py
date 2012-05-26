@@ -4,8 +4,8 @@ from setuptools import setup
 
 setup(
     name='santa.theme',
-    version='0.1',
-    description="Santa Claus Foundation Theme",
+    version='0.2',
+    description="",
     long_description=open("README.rst").read(),
     # Get more strings from
     # http://pypi.python.org/pypi?:action=list_classifiers
