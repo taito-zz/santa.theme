@@ -6,8 +6,7 @@
     margin: 0;
 }
 #portal-column-content {
-  background: white;
-  opacity: 0.85;
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
@@ -21,7 +20,7 @@ section#santa-about ul {
   text-align: right;
 }
 section#santa-about ul li {
-  background: DarkSalmon;
+  background-color: rgba(233, 150, 122, 0.7);
   border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
@@ -60,6 +59,12 @@ section.santa-feed article img {
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
 }
+section.partners article img {
+  float: left;
+  margin: 0 0.5em 0.5em;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
 section.santa-feed article img.santa-fall-back {
   width: 200px;
 }
@@ -67,7 +72,7 @@ p.read-more {
   text-align: right;
 }
 p.read-more a{
-  background: DarkSalmon;
+  background-color: rgba(233, 150, 122, 0.7);
   border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
