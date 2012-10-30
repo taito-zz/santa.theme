@@ -5,7 +5,7 @@ from setuptools import setup
 setup(
     name='santa.theme',
     version='0.2',
-    description="",
+    description="Theme for Santa site.",
     long_description=open("README.rst").read(),
     # Get more strings from
     # http://pypi.python.org/pypi?:action=list_classifiers
