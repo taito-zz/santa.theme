@@ -1,31 +1,17 @@
 <div
   metal:define-macro="portal_footer"
   i18n:domain="plone"
-  class="row"
-  >
+  class="row">
   <div class="cell width-full position-0">
     <div
       id="portal-footer"
-      tal:define="portal_state view/portal_state"
-      >
-      &copy;2000-<tal:year tal:content="view/year" /> 
-      <a
-        href="http://santaclausworld.fi"
-        tal:attributes="
-          alt portal_state/portal_title;
-          href view/site_url;
-          title portal_state/portal_title;
-        "
-        tal:content="portal_state/portal_title"
-        />
-        &nbsp;&nbsp;|&nbsp;&nbsp;
-      Site develped by 
+      tal:define="portal_state view/portal_state">
+      &copy;<tal:year tal:content="view/year" />
       <a
         href="http://abita.fi/"
         target="_blank"
-        title="ABITA Open Source Technologies &amp;&amp; Open Busunesses"
-        >
-          ABITA OY
+        title="ABITA Open Source Technologies">
+        ABITA OY
       </a>
     </div>
   </div>
