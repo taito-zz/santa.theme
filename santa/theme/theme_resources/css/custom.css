@@ -80,3 +80,40 @@ p.read-more a{
   margin-right: 1em;
   padding: 0.5em;
 }
+
+h1.reserve {
+  border-radius: 5em;
+  padding: 2em 2em;
+  transition-property: background color;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  -webkit-transition-property: background color;
+  -webkit-transition-duration: 1s;
+  -webkit-transition-timing-function: ease;
+}
+
+#content h1.reserve a:link,
+#content h1.reserve a:visited,
+#content h1.reserve a:hover,
+.section-on-christmas #content h1.documentFirstHeading,
+.section-no-christmas #content h1.documentFirstHeading {
+  color: white;
+}
+
+#on-christmas,
+.section-on-christmas #content h1.documentFirstHeading {
+  background: DarkRed;
+}
+
+#on-christmas:hover{
+  background: DarkSalmon;
+}
+
+#no-christmas,
+.section-no-christmas #content h1.documentFirstHeading {
+  background: DarkBlue;
+}
+
+#no-christmas:hover {
+  background: cadetblue;
+}
