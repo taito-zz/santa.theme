@@ -28,7 +28,7 @@ setup(
         'hexagonit.testing',
         'plone.app.theming',
         'plone.app.themingplugins',
-        'santa.templates',
+        # 'santa.templates',
         'setuptools'],
     entry_points="""
     # -*- Entry points: -*-
