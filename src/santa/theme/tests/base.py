@@ -6,7 +6,7 @@ from plone.app.testing import PloneSandboxLayer
 import unittest
 
 
-class AbitaThemeLayer(PloneSandboxLayer):
+class SantaThemeLayer(PloneSandboxLayer):
 
     defaultBases = (PLONE_FIXTURE,)
 
@@ -25,11 +25,11 @@ class AbitaThemeLayer(PloneSandboxLayer):
         """Tear down Zope."""
 
 
-FIXTURE = AbitaThemeLayer()
+FIXTURE = SantaThemeLayer()
 INTEGRATION_TESTING = IntegrationTesting(
-    bases=(FIXTURE,), name="AbitaThemeLayer:Integration")
+    bases=(FIXTURE,), name="SantaThemeLayer:Integration")
 FUNCTIONAL_TESTING = FunctionalTesting(
-    bases=(FIXTURE,), name="AbitaThemeLayer:Functional")
+    bases=(FIXTURE,), name="SantaThemeLayer:Functional")
 
 
 class IntegrationTestCase(unittest.TestCase):
