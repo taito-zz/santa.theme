@@ -7,7 +7,7 @@
   xmlns="http://namespaces.zope.org/zope">
 
   <include package="five.pt"/>
-  <include package="santa.templates"/>
+  <!-- <include package="santa.templates"/> -->
   <include package="plone.app.theming"/>
 
   <plone:static
