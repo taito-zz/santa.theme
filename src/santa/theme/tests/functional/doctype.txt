@@ -1,5 +1,5 @@
-Check that the theme contains the correct HTML5 doctype.
+Check the doctype::
 
     >>> browser.open('/')
     >>> print browser.contents.strip().splitlines()[0]
-    <!doctype html>
+    <!DOCTYPE html>

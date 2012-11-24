@@ -1,5 +1,5 @@
-from santa.theme.tests.base import IntegrationTestCase
 from Products.CMFCore.utils import getToolByName
+from santa.theme.tests.base import IntegrationTestCase
 
 
 class TestCase(IntegrationTestCase):
@@ -25,7 +25,7 @@ class TestCase(IntegrationTestCase):
         installer.uninstallProducts(['santa.theme'])
         self.failIf(installer.isProductInstalled('santa.theme'))
 
-    def test_css_registry_configured(self):
+    def test_cssregistry__style_css(self):
         css_resources = set(
             getToolByName(self.portal, 'portal_css').getResourceIds())
 
@@ -48,8 +48,7 @@ class TestCase(IntegrationTestCase):
         settings = registry.forInterface(IThemeSettings)
         self.assertEqual(
             settings.rules,
-            "/++theme++santa.theme/rules.xml"
-        )
+            "/++theme++santa.theme/rules.xml")
 
     def test_theme__absolutePrefix(self):
         from zope.component import getUtility
@@ -59,13 +58,4 @@ class TestCase(IntegrationTestCase):
         settings = registry.forInterface(IThemeSettings)
         self.assertEqual(
             settings.absolutePrefix,
-            "/++theme++santa.theme"
-        )
-
-    def test_doctype_configured(self):
-        from plone.app.theming.interfaces import IThemeSettings
-        from plone.registry.interfaces import IRegistry
-        from zope.component import getUtility
-
-        settings = getUtility(IRegistry).forInterface(IThemeSettings)
-        self.assertEqual(settings.doctype, '<!doctype html>')
+            "/++theme++santa.theme")

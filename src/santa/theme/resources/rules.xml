@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<rules
+  xmlns:css="http://namespaces.plone.org/diazo/css"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns="http://namespaces.plone.org/diazo">
+  <notheme if-path="portal_registration/passwordreset" />
+  <theme href="index.html" css:if-content="#visual-portal-wrapper" />
+  <rules css:if-content="#visual-portal-wrapper">
+    <replace content="/html/head/title" theme="/html/head/title"/>
+    <copy content="/html/head/meta" theme="/html/head/meta"/>
+    <drop css:content="meta[http-equiv]" />
+    <replace content="/html/head/link" theme="/html/head/link"/>
+    <replace content="/html/head/script" theme="/html/head/script"/>
+    <merge attributes="class" css:content="body" css:theme="body" />
+    <after css:content-children="#visual-portal-wrapper" css:theme-children="#visual-portal-wrapper" />
+    <!-- <after css:content-children="#portal-top" css:theme-children="#portal-top" /> -->
+    <!-- <after css:content="#portal-columns" css:theme-children="#portal-body" /> -->
+    <!-- <drop css:content="#portal-columns" attributes="class" /> -->
+    <!-- <replace css:content="#portal-footer-wrapper" css:theme="#portal-footer-wrapper" /> -->
+  </rules>
+</rules>

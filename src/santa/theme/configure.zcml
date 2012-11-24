@@ -1,17 +1,17 @@
 <configure
-    i18n_domain="santa.theme"
-    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-    xmlns:grok="http://namespaces.zope.org/grok"
-    xmlns:i18n="http://namespaces.zope.org/i18n"
-    xmlns:plone="http://namespaces.plone.org/plone"
-    xmlns="http://namespaces.zope.org/zope">
+  i18n_domain="santa.theme"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  xmlns:grok="http://namespaces.zope.org/grok"
+  xmlns:i18n="http://namespaces.zope.org/i18n"
+  xmlns:plone="http://namespaces.plone.org/plone"
+  xmlns="http://namespaces.zope.org/zope">
 
   <include package="five.pt"/>
   <include package="santa.templates"/>
   <include package="plone.app.theming"/>
 
   <plone:static
-    directory="theme_resources"
+    directory="resources"
     name="santa.theme"
     type="theme"
     />
