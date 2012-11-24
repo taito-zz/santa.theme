@@ -1,0 +1,13 @@
+#portal-header {
+    width: 100%;
+}
+
+#portal-logo {
+    max-width: 182px;
+    width: 100%;
+}
+
+#portal-logo img {
+    width: 100%;
+    height: auto;
+}
