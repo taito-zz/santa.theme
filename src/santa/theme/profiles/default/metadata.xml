@@ -3,6 +3,7 @@
   <version>2</version>
   <dependencies>
     <dependency>profile-abita.basetheme:default</dependency>
+    <dependency>profile-Products.PloneFormGen:default</dependency>
     <dependency>profile-collective.prettyphoto:default</dependency>
   </dependencies>
 </metadata>

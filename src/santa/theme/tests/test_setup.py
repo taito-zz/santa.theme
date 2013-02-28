@@ -110,6 +110,10 @@ class TestCase(IntegrationTestCase):
         installer = getToolByName(self.portal, 'portal_quickinstaller')
         self.assertTrue(installer.isProductInstalled('abita.basetheme'))
 
+    def test_metadata__dependency__PloneFormGen(self):
+        installer = getToolByName(self.portal, 'portal_quickinstaller')
+        self.assertTrue(installer.isProductInstalled('PloneFormGen'))
+
     def test_metadata__dependency__collective_prettyphoto(self):
         installer = getToolByName(self.portal, 'portal_quickinstaller')
         self.assertTrue(installer.isProductInstalled('collective.prettyphoto'))

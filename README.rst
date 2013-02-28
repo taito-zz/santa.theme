@@ -7,6 +7,11 @@ santa.theme makes Plone site into Santa site.
 Change log
 ----------
 
+0.5 (2013-02-28)
+================
+
+- Added dependency to Products.PloneFormGen. [taito]
+
 0.4 (2013-02-28)
 ================
 

@@ -23,6 +23,7 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
+        'Products.PloneFormGen',
         'abita.basetheme',
         'collective.prettyphoto',
         'hexagonit.testing',
