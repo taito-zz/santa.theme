@@ -4,12 +4,9 @@ from Products.CMFPlone.interfaces.siteroot import IPloneSiteRoot
 from collective.base.interfaces import IBaseAdapter
 from abita.basetheme.browser.viewlet import PloneSiteViewletManager
 from five import grok
-from plone.app.viewletmanager.manager import OrderedViewletManager
-from plone.memoize.view import memoize
 from plone.memoize.view import memoize_contextless
 from santa.theme.browser.interfaces import ISantaThemeLayer
 from datetime import date
-from DateTime import DateTime
 
 
 grok.templatedir('viewlets')
@@ -33,7 +30,7 @@ class PloneSiteEventFeedViewlet(BaseViewlet):
     def events(self):
         res = []
         base = IBaseAdapter(self.context)
-        before_date = '{}/01/01'.format(self.year+1)
+        before_date = '{}/01/01'.format(self.year + 1)
         for item in base.get_content_listing(IATEvent, sort_on='start', start={'query': [DateTime(before_date), ], 'range': 'max'}, end={'query': [DateTime(), ], 'range': 'min'}):
             res.append({
                 'datetime': base.event_datetime(item),

@@ -11,9 +11,6 @@ class PloneSiteEventFeedViewletTestCase(IntegrationTestCase):
     def setUp(self):
         self.portal = self.layer['portal']
         setRoles(self.portal, TEST_USER_ID, ['Manager'])
-        # self.about = self.portal[self.portal.invokeFactory('Folder', 'about', title="Äböut",
-        #     description="Description of Äböut")]
-        # self.about.reindexObject()
 
     def test_subclass(self):
         from santa.theme.browser.viewlet import BaseViewlet
@@ -54,16 +51,16 @@ class PloneSiteEventFeedViewletTestCase(IntegrationTestCase):
 
         from DateTime import DateTime
         now = DateTime()
-        self.create_event(id='event1', title='Ävent1', description='Descriptiön of Ävent1', startDate=now-1, endDate=now+1)
+        self.create_event(id='event1', title='Ävent1', description='Descriptiön of Ävent1', startDate=now - 1, endDate=now + 1)
         self.assertEqual(len(instance.events), 1)
 
-        self.create_event(id='event2', title='Ävent2', description='Descriptiön of Ävent2', startDate=now-2, endDate=now-1)
+        self.create_event(id='event2', title='Ävent2', description='Descriptiön of Ävent2', startDate=now - 2, endDate=now - 1)
         self.assertEqual(len(instance.events), 1)
 
-        self.create_event(id='event3', title='Ävent3', description='Descriptiön of Ävent3', startDate=now+1, endDate=now+2)
+        self.create_event(id='event3', title='Ävent3', description='Descriptiön of Ävent3', startDate=now + 1, endDate=now + 2)
         self.assertEqual(len(instance.events), 2)
 
-        self.create_event(id='event4', title='Ävent4', description='Descriptiön of Ävent4', startDate=now+365, endDate=now+366)
+        self.create_event(id='event4', title='Ävent4', description='Descriptiön of Ävent4', startDate=now + 365, endDate=now + 366)
         self.assertEqual(len(instance.events), 2)
 
     def test_year(self):
