@@ -1,0 +1,49 @@
+body {
+    background: url(/++resource++santa.theme/images/background.jpg);
+}
+a:link, a:visited,
+#portal-globalnav .selected a:hover,
+#content a:link, dl.portlet a:link {
+    color: DarkRed;
+}
+#visual-portal-wrapper {
+    margin: 2em auto;
+    width: 1000px;
+}
+body.portaltype-plone-site #visual-portal-wrapper {
+    width: 600px;
+}
+#portal-top,
+#portal-columns,
+#portal-footer-wrapper {
+    background: rgba(255, 255, 255, 0.5);
+}
+#portal-top {
+    border-radius: 0.5em 0.5em 0 0;
+}
+#portal-footer-wrapper {
+    border-radius: 0 0 0.5em 0.5em;
+}
+#portal-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.5em;
+    text-shadow: 2px 2px 3px #999;
+}
+#portal-languageselector,
+#portal-personaltools,
+#portal-personaltools dd,
+#portal-globalnav li a,
+#portal-globalnav .selected a:hover,
+div.managePortletsLink,
+a.managePortletsFallback,
+div.listingBar a:hover {
+    background: rgba(233, 150, 122, 0.7);
+}
+#portal-globalnav .selected a,
+#portal-globalnav a:hover {
+    background: DarkRed;
+}
+#portal-footer {
+    background: none;
+}

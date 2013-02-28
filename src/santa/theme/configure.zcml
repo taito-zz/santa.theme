@@ -6,15 +6,11 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     xmlns="http://namespaces.zope.org/zope">
 
-  <include package="five.pt"/>
-  <include package="santa.templates"/>
-  <include package="plone.app.theming"/>
+  <include package="abita.basetheme"/>
+  <include package=".browser" />
+  <grok:grok package="." />
 
-  <plone:static
-    directory="theme_resources"
-    name="santa.theme"
-    type="theme"
-    />
+  <i18n:registerTranslations directory="locales" />
 
   <genericsetup:registerProfile
     description="Installs the santa.theme package"

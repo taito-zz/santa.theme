@@ -1,0 +1,6 @@
+<layers>
+  <layer
+    interface="santa.theme.browser.interfaces.ISantaThemeLayer"
+    name="santa.theme"
+    />
+</layers>

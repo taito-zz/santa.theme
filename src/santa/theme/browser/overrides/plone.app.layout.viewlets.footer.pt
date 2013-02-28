@@ -1,0 +1,13 @@
+<div
+  id="portal-footer"
+  metal:define-macro="portal_footer">
+  <div class="footer-part">
+    &copy;<tal:year tal:content="view/year" />
+    <a
+      href="http://abita.fi/"
+      target="_blank"
+      title="ABITA">
+      ABITA
+    </a>
+  </div>
+</div>

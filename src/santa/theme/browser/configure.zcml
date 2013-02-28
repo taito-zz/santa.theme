@@ -1,0 +1,12 @@
+<configure
+  i18n_domain="santa.theme"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns="http://namespaces.zope.org/zope">
+
+  <include package="z3c.jbot" file="meta.zcml" />
+
+  <browser:jbot
+    directory="overrides"
+    layer=".interfaces.ISantaThemeLayer" />
+
+</configure>
