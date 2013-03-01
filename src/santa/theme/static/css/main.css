@@ -3,7 +3,8 @@ body {
 }
 a:link, a:visited,
 #portal-globalnav .selected a:hover,
-#content a:link, dl.portlet a:link {
+#content a:link, dl.portlet a:link,
+#content h1.documentFirstHeading {
     color: DarkRed;
 }
 #visual-portal-wrapper {
@@ -25,7 +26,7 @@ body.portaltype-plone-site #visual-portal-wrapper {
     border-radius: 0 0 0.5em 0.5em;
 }
 #portal-logo {
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: bold;
     margin: 0.5em;
     text-shadow: 2px 2px 3px #999;
@@ -43,6 +44,19 @@ div.listingBar a:hover {
 #portal-globalnav .selected a,
 #portal-globalnav a:hover {
     background: DarkRed;
+}
+/* Content */
+#content h1.documentFirstHeading {
+    border-bottom: 1px solid darkred;
+    padding: 0.2em 0.5em 0;
+    text-shadow: 2px 2px 3px #999;
+}
+#content h2 {
+    text-shadow: 2px 2px 3px #999;
+}
+#content .documentDescription,
+#content #description {
+    color: #444444;
 }
 #portal-footer {
     background: none;
