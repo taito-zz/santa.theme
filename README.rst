@@ -7,6 +7,11 @@ santa.theme makes Plone site into Santa site.
 Change log
 ----------
 
+0.5.2 (2013-03-04)
+==================
+
+- Applied responsible styling. [taito]
+
 0.5.1 (2013-03-01)
 ==================
 

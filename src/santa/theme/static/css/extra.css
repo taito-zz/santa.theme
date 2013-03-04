@@ -29,10 +29,18 @@ section#event-feed .datetime {
     font-size: 70%;
 }
 
-/* Portlet Santa Claus */
-dl.portlet-static-santa-claus dt {
-    display: none;
-}
-dl.portlet-static-santa-claus img{
+img.santa-image {
     border-radius: 1em;
+}
+
+@media screen and (max-width: 1000px) {
+    img.santa-image {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    img.santa-image {
+        width: 140px;
+    }
 }
