@@ -10,7 +10,7 @@ Change log
 0.5.4 (2013-03-19)
 ==================
 
-- Moved style from abita.basethem. [taito]
+- Moved style from abita.basetheme. [taito]
 
 0.5.3 (2013-03-11)
 ==================
