@@ -7,6 +7,11 @@ santa.theme makes Plone site into Santa site.
 Change log
 ----------
 
+0.5.4 (2013-03-19)
+==================
+
+- Moved style from abita.basethem. [taito]
+
 0.5.3 (2013-03-11)
 ==================
 

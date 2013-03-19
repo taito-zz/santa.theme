@@ -46,6 +46,14 @@ div.listingBar a:hover {
 #portal-globalnav a:hover {
     background: DarkRed;
 }
+
+/* Global navi */
+#portal-globalnav li a {
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    margin: 0 0 0.5em;
+}
+
 /* Content */
 #content h1.documentFirstHeading {
     border-bottom: 1px solid darkred;
@@ -61,6 +69,7 @@ div.listingBar a:hover {
 }
 #portal-footer {
     background: none;
+    padding: 1em 3em;
 }
 
 @media screen and (max-width: 1000px) {
