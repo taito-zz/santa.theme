@@ -7,6 +7,11 @@ santa.theme makes Plone site into Santa site.
 Change log
 ----------
 
+0.5.5 (2013-03-21)
+==================
+
+- Removed color from description style. [taito]
+
 0.5.4 (2013-03-19)
 ==================
 

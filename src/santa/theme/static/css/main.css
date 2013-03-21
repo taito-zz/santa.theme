@@ -63,10 +63,6 @@ div.listingBar a:hover {
 #content h2 {
     text-shadow: 2px 2px 3px #999;
 }
-#content .documentDescription,
-#content #description {
-    color: #444444;
-}
 #portal-footer {
     background: none;
     padding: 1em 3em;
