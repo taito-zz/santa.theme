@@ -4,8 +4,13 @@ santa.theme
 
 santa.theme makes Plone site into Santa site.
 
-Change log
-----------
+Changelog
+---------
+
+0.6.1 (2013-04-16)
+==================
+
+- Added browser resource for static files. [taito]
 
 0.6 (2013-04-16)
 ================

@@ -1,5 +1,5 @@
 body {
-    background: url(/++resource++santa.theme/images/background.jpg) center top;
+    background: url(++resource++santa.theme/images/background.jpg) center top;
 }
 a:link, a:visited,
 #portal-globalnav .selected a:hover,
