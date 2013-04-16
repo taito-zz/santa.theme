@@ -1,6 +1,6 @@
-<section i18n:domain="santa.theme" id="event-feed" tal:condition="viewlet/events">
+<section i18n:domain="santa.theme" id="event-feed" tal:condition="view/events">
   <h1 i18n:translate="">Event Information</h1>
-  <article tal:repeat="item viewlet/events">
+  <article tal:repeat="item view/events">
     <h1><a tal:attributes="href item/url" tal:content="item/title" /></h1>
     <div class="datetime" tal:content="item/datetime" />
     <div tal:content="item/description" />

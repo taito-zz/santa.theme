@@ -7,6 +7,13 @@ santa.theme makes Plone site into Santa site.
 Change log
 ----------
 
+0.6 (2013-04-16)
+================
+
+- Moved test packages to extras_require. [taito]
+- Removed dependency from five.grok. [taito]
+- Tested with Plone-4.3. [taito]
+
 0.5.5 (2013-03-21)
 ==================
 

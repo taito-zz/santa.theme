@@ -5,5 +5,3 @@
 .DS_Store
 .long-description.html
 dist
-santa/theme/theme_resources/less/plone/*.css
-santa/theme/theme_resources/less/theme/*.css

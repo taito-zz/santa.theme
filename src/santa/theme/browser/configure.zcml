@@ -9,4 +9,13 @@
     directory="overrides"
     layer=".interfaces.ISantaThemeLayer" />
 
+  <browser:viewlet
+    class=".viewlet.PloneSiteEventFeedViewlet"
+    for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
+    layer=".interfaces.ISantaThemeLayer"
+    manager="abita.basetheme.browser.interfaces.IPloneSiteViewletManager"
+    name="santa.theme.viewlet.eventfeed"
+    permission="zope2.View"
+    />
+
 </configure>
