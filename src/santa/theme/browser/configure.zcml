@@ -9,6 +9,12 @@
     directory="overrides"
     layer=".interfaces.ISantaThemeLayer" />
 
+  <browser:resourceDirectory
+    name="santa.theme"
+    directory="static"
+    layer=".interfaces.ISantaThemeLayer"
+    />
+
   <browser:viewlet
     class=".viewlet.PloneSiteEventFeedViewlet"
     for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"

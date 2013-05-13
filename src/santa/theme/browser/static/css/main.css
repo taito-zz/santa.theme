@@ -1,5 +1,9 @@
 body {
-    background: url(++resource++santa.theme/images/background.jpg) center top;
+    background: url(++resource++santa.theme/images/bg.jpg) center center fixed;
+    background-size: cover;
+}
+.state-published {
+    color: DarkRed !important;
 }
 a:link, a:visited,
 #portal-globalnav .selected a:hover,
@@ -17,7 +21,7 @@ body.portaltype-plone-site #visual-portal-wrapper {
 #portal-top,
 #portal-columns,
 #portal-footer-wrapper {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.7);
 }
 #portal-top {
     border-radius: 0.5em 0.5em 0 0;
@@ -66,6 +70,11 @@ div.listingBar a:hover {
 #portal-footer {
     background: none;
     padding: 1em 3em;
+}
+
+/* Portlet */
+.portletWrapper {
+    margin: 1em 0;
 }
 
 @media screen and (max-width: 1000px) {
