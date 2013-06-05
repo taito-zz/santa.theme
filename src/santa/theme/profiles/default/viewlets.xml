@@ -1,10 +1,8 @@
 <?xml version="1.0"?>
 <object>
-  <hidden manager="plone.portalheader" skinname="*">
-    <viewlet name="plone.searchbox" />
-  </hidden>
-  <hidden manager="plone.portalfooter" skinname="*">
-    <viewlet name="plone.colophon" />
-    <viewlet name="plone.site_actions" />
-  </hidden>
+  <order manager="collective.base.viewlet-manager.base" skinname="*">
+    <!-- @@view for interface: plone.app.layout.navigation.interfaces.INavigationRoot -->
+    <viewlet name="abita.basetheme.viewlet.about" />
+    <viewlet name="santa.theme.viewlet.eventfeed" />
+  </order>
 </object>
