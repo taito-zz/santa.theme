@@ -1,37 +1,28 @@
 # -*- coding: utf-8 -*-
+from santa.theme.browser.interfaces import IPloneSiteEventFeedViewlet
+from santa.theme.browser.viewlet import PloneSiteEventFeedViewlet
 from santa.theme.tests.base import IntegrationTestCase
-from zope.publisher.browser import TestRequest
-from plone.app.testing import setRoles
-from plone.app.testing import TEST_USER_ID
 
 
 class PloneSiteEventFeedViewletTestCase(IntegrationTestCase):
     """TestCase for PloneSiteEventFeedViewlet"""
 
-    def setUp(self):
-        self.portal = self.layer['portal']
-        setRoles(self.portal, TEST_USER_ID, ['Manager'])
-
     def test_subclass(self):
-        from plone.app.layout.viewlets.common import ViewletBase
-        from santa.theme.browser.viewlet import PloneSiteEventFeedViewlet
-        self.assertTrue(issubclass(PloneSiteEventFeedViewlet, ViewletBase))
+        from collective.base.viewlet import Viewlet as Base
+        self.assertTrue(issubclass(PloneSiteEventFeedViewlet, Base))
+        from collective.base.interfaces import IViewlet as Base
+        self.assertTrue(issubclass(IPloneSiteEventFeedViewlet, Base))
 
     def create_event(self, **kwargs):
-        event = self.portal[self.portal.invokeFactory('Event', **kwargs)]
-        event.reindexObject()
-        return event
+        return self.create_atcontent('Event', **kwargs)
 
-    def create_instance(self):
-        from santa.theme.browser.viewlet import PloneSiteEventFeedViewlet
-        from zope.annotation.interfaces import IAttributeAnnotatable
-        from zope.interface import directlyProvides
-        request = TestRequest()
-        directlyProvides(request, IAttributeAnnotatable)
-        return PloneSiteEventFeedViewlet(self.portal, request, manager=None, view=None)
+    def test_verifyObject(self):
+        from zope.interface.verify import verifyObject
+        instance = self.create_viewlet(PloneSiteEventFeedViewlet)
+        self.assertTrue(verifyObject(IPloneSiteEventFeedViewlet, instance))
 
     def test_events(self):
-        instance = self.create_instance()
+        instance = self.create_viewlet(PloneSiteEventFeedViewlet)
         self.assertEqual(len(instance.events()), 0)
 
         from DateTime import DateTime
@@ -50,5 +41,5 @@ class PloneSiteEventFeedViewletTestCase(IntegrationTestCase):
 
     def test_year(self):
         from datetime import date
-        instance = self.create_instance()
+        instance = self.create_viewlet(PloneSiteEventFeedViewlet)
         self.assertEqual(instance.year(), date.today().year)

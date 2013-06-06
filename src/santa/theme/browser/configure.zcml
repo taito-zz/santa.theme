@@ -20,7 +20,7 @@
     for="plone.app.layout.navigation.interfaces.INavigationRoot"
     layer=".interfaces.ISantaThemeLayer"
     manager="collective.base.interfaces.IBaseViewViewletManager"
-    name="santa.theme.viewlet.eventfeed"
+    name="santa.theme.viewlet.event-feed"
     permission="zope2.View"
     />
 

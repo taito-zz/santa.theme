@@ -2,35 +2,35 @@
 <object name="portal_css">
 
   <stylesheet
-      title=""
-      authenticated="False"
-      cacheable="True"
-      compression="safe"
-      conditionalcomment=""
-      cookable="True"
-      enabled="on"
-      expression=""
-      id="++resource++santa.theme/css/main.css"
-      media="screen"
-      rel="stylesheet"
-      rendering="link"
-      applyPrefix="True"
-      />
+    title=""
+    authenticated="False"
+    cacheable="True"
+    compression="safe"
+    conditionalcomment=""
+    cookable="True"
+    enabled="on"
+    expression=""
+    id="++resource++santa.theme/css/main.css"
+    media="screen"
+    rel="stylesheet"
+    rendering="link"
+    applyPrefix="True"
+    />
 
   <stylesheet
-      title=""
-      authenticated="False"
-      cacheable="True"
-      compression="safe"
-      conditionalcomment=""
-      cookable="True"
-      enabled="on"
-      expression=""
-      id="++resource++santa.theme/css/extra.css"
-      media="screen"
-      rel="stylesheet"
-      rendering="link"
-      applyPrefix="True"
-      />
+    title=""
+    authenticated="False"
+    cacheable="True"
+    compression="safe"
+    conditionalcomment=""
+    cookable="True"
+    enabled="on"
+    expression=""
+    id="++resource++santa.theme/css/extra.css"
+    media="screen"
+    rel="stylesheet"
+    rendering="link"
+    applyPrefix="True"
+    />
 
 </object>

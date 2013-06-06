@@ -3,6 +3,6 @@
   <order manager="collective.base.viewlet-manager.base" skinname="*">
     <!-- @@view for interface: plone.app.layout.navigation.interfaces.INavigationRoot -->
     <viewlet name="abita.basetheme.viewlet.about" />
-    <viewlet name="santa.theme.viewlet.eventfeed" />
+    <viewlet name="santa.theme.viewlet.event-feed" />
   </order>
 </object>

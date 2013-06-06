@@ -67,7 +67,7 @@ class TestCase(IntegrationTestCase):
         skinname = "*"
         for viewlet in (
             u'abita.basetheme.viewlet.about',
-            u'santa.theme.viewlet.eventfeed'):
+            u'santa.theme.viewlet.event-feed'):
             self.assertIn(viewlet, storage.getOrder(manager, skinname))
 
     def test_uninstall_package(self):
