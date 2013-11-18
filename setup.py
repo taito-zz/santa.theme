@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='santa.theme',
-    version='0.7',
+    version='0.8',
     description="Theme for Santa site.",
     long_description=open("README.rst").read(),
     classifiers=[
