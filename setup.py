@@ -25,7 +25,9 @@ setup(
     install_requires=[
         'Products.PloneFormGen',
         'abita.basetheme',
+        'collective.js.moment',
         'collective.prettyphoto',
+        'fourdigits.portlet.twitter',
         'setuptools'],
     extras_require={'test': ['hexagonit.testing']},
     entry_points="""

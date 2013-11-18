@@ -10,6 +10,10 @@ class ISantaThemeLayer(Interface):
 
 # Viewlet
 
+class IPloneSiteTwitterFeedViewlet(IViewlet):
+    """Interface to display twitter feed for content type: Plone Site"""
+
+
 class IPloneSiteEventFeedViewlet(IViewlet):
     """Interface to display event feed for content type: Plone Site"""
 

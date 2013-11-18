@@ -7,6 +7,11 @@ santa.theme makes Plone site into Santa site.
 Changelog
 ---------
 
+0.8 (2013-11-1x)
+================
+
+- Add viewlet to show twitter feed. [taito]
+
 0.7 (2013-06-06)
 ================
 

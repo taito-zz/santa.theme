@@ -1,0 +1,16 @@
+<configure
+  i18n_domain="santa.theme"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  xmlns="http://namespaces.zope.org/zope">
+
+  <genericsetup:upgradeStep
+    description=""
+    destination="3"
+    handler="santa.theme.upgrades.reimport_viewlets"
+    profile="santa.theme:default"
+    sortkey="1"
+    source="2"
+    title="Reimport viewlets"
+    />
+
+</configure>

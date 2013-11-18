@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-06-06 07:53+0000\n"
+"POT-Creation-Date: 2013-11-18 16:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,4 +17,18 @@ msgstr ""
 #: ./browser/viewlets/event-feed.pt:2
 msgid "Event Information"
 msgstr "イベント情報"
+
+#: ./browser/overrides/plone.app.layout.viewlets.footer.pt:6
+msgid "Santa Claus Foundation"
+msgstr "サンタクロース財団"
+
+#. Default: "Supported by Santa Claus Foundation which locates within Finnish Tourist Board."
+#: ./browser/overrides/plone.app.layout.viewlets.footer.pt:10
+msgid "supported_by"
+msgstr "フィンランド政府観光局内サンタクロース財団協賛"
+
+#. Default: "Tweets from @TonttuJapan"
+#: ./browser/viewlets/twitter-feed.pt:4
+msgid "tweet_from"
+msgstr "トントゥのつぶやき（@TonttuJapan）"
 

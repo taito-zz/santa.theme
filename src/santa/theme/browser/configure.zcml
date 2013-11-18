@@ -16,6 +16,15 @@
     />
 
   <browser:viewlet
+    class=".viewlet.PloneSiteTwitterFeedViewlet"
+    for="plone.app.layout.navigation.interfaces.INavigationRoot"
+    layer=".interfaces.ISantaThemeLayer"
+    manager="collective.base.interfaces.IBaseViewViewletManager"
+    name="santa.theme.viewlet.twitter-feed"
+    permission="zope2.View"
+    />
+
+  <browser:viewlet
     class=".viewlet.PloneSiteEventFeedViewlet"
     for="plone.app.layout.navigation.interfaces.INavigationRoot"
     layer=".interfaces.ISantaThemeLayer"

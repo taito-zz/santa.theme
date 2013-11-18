@@ -57,7 +57,7 @@ class TestCase(IntegrationTestCase):
     def test_metadata__version(self):
         setup = getToolByName(self.portal, 'portal_setup')
         self.assertEqual(
-            setup.getVersionForProfile('profile-santa.theme:default'), u'2')
+            setup.getVersionForProfile('profile-santa.theme:default'), u'3')
 
     def test_viewlets__order__collective_base_viewlet_manager_base(self):
         from zope.component import getUtility

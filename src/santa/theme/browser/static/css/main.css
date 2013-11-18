@@ -21,7 +21,7 @@ body.portaltype-plone-site #visual-portal-wrapper {
 #portal-top,
 #portal-columns,
 #portal-footer-wrapper {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.8);
 }
 #portal-top {
     border-radius: 0.5em 0.5em 0 0;
@@ -31,10 +31,16 @@ body.portaltype-plone-site #visual-portal-wrapper {
     margin: 0 0 2em;
 }
 #portal-logo {
+    margin: 0.5em
+}
+#portal-logo h1 {
     font-size: 1.7em;
     font-weight: bold;
-    margin: 0.5em;
+    margin: 0;
     text-shadow: 2px 2px 3px #999;
+}
+#portal-logo #portal-description {
+    color: #222;
 }
 #portal-languageselector,
 #portal-personaltools,

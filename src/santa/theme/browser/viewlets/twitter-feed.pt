@@ -1,0 +1,14 @@
+<section i18n:domain="santa.theme" id="twitter-feed" tal:define="
+  tweets view/twittermessages|nothing;
+  toLocalizedTime nocall:context/@@plone/toLocalizedTime">
+  <h1 i18n:translate="tweet_from">Tweets from @TonttuJapan</h1>
+  <article tal:repeat="obj tweets">
+
+    <div class="tweetText">
+      <span class="tweetBody"
+            tal:content="structure python: view.expand(obj.text)">Text</span>
+    </div>
+    <div class="datetime" tal:content="python:toLocalizedTime(obj.created_at, long_format=1)" />
+
+  </article>
+</section>

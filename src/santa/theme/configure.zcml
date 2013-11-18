@@ -7,7 +7,10 @@
   <include package="abita.basetheme"/>
   <include package="Products.PloneFormGen"/>
   <include package="collective.prettyphoto"/>
+  <include package="collective.js.moment"/>
+  <include package="fourdigits.portlet.twitter"/>
   <include package=".browser" />
+  <include file="upgrades.zcml"/>
 
   <i18n:registerTranslations directory="locales" />
 

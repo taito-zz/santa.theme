@@ -1,6 +1,14 @@
 <div
+  i18n:domain="santa.theme"
   id="portal-footer"
   metal:define-macro="portal_footer">
+  <div class="image-block">
+    <img class="border-none" title="Santa Claus Foundation"
+      i18n:attributes="title"
+      tal:attributes="src string:${view/site_url}/++resource++santa.theme/images/santa-claus-foundation-icon.png">
+  </div>
+  <div class="supported-by" i18n:translate="supported_by">Supported by Santa Claus Foundation which locates within Finnish Tourist Board.</div>
+
   <div class="footer-part">
     &copy;<tal:year tal:content="view/year" />
     <a

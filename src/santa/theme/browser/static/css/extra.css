@@ -4,34 +4,49 @@
 }
 
 /* Event feed */
-section#event-feed {
+section#event-feed,
+section#twitter-feed {
     clear: both;
 }
-section#event-feed h1 {
+section#event-feed h1,
+section#twitter-feed h1 {
     letter-spacing: 0.1em;
 }
-section#event-feed > h1 {
+section#event-feed > h1,
+section#twitter-feed > h1 {
     color: darkred;
     border-bottom: 1px solid darkred;
     font-size: 1.5em;
     padding: 0.2em 0.5em 0;
     text-shadow: 2px 2px 3px #999;
 }
-section#event-feed article {
-    margin: 0 1em;
+section#event-feed article,
+section#twitter-feed article {
+    border-bottom: solid 1px #ccc;
+    margin: 1em;
+    padding-bottom: 1em;
 }
 section#event-feed article h1 {
     font-size: 1.2em;
     line-height: 1em;
 }
-section#event-feed .datetime {
-    color: #545454;
-    font-size: 70%;
+section#event-feed .datetime,
+section#twitter-feed .datetime {
+    color: #323232;
+    font-size: 90%;
+    text-align: right;
+}
+
+#portal-footer .image-block,
+#portal-footer .supported-by {
+    margin-bottom: 0.3em;
 }
 
 img.santa-image {
     border-radius: 1em;
 }
+
+
 
 @media screen and (max-width: 1000px) {
     img.santa-image {
